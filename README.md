@@ -24,8 +24,8 @@ $2^{2048} - 1$. In decimal terms, this is a very large number: approximately $3.
 
 Prime numbers are numbers greater than 1 that have no divisors other than 1 and themselves. A
 **2048-bit prime number** would be a prime that lies in the range of numbers that can be represented
-with 2048 bits. This means its decimal value would be somewhere between: $2^{2047} \quad \text{(the
-smallest 2048-bit number)} \quad \text{and} \quad 2^{2048} - 1 $ This range includes large prime
+with 2048 bits. This means its decimal value would be somewhere between: $2^{2047}$ (the smallest
+2048-bit number) and $2^{2048} - 1$ (the largest 2048-bit number). This range includes large prime
 numbers used in cryptographic algorithms, such as RSA, where prime numbers of such large size are
 needed to ensure the security of encryption.
 
