@@ -24,7 +24,7 @@ $2^{2048} - 1$. In decimal terms, this is a very large number: approximately $3.
 
 Prime numbers are numbers greater than 1 that have no divisors other than 1 and themselves. A
 **2048-bit prime number** would be a prime that lies in the range of numbers that can be represented
-with 2048 bits. This means its decimal value would be somewhere between: $ 2^{2047} \quad \text{(the
+with 2048 bits. This means its decimal value would be somewhere between: $2^{2047} \quad \text{(the
 smallest 2048-bit number)} \quad \text{and} \quad 2^{2048} - 1 $ This range includes large prime
 numbers used in cryptographic algorithms, such as RSA, where prime numbers of such large size are
 needed to ensure the security of encryption.
@@ -64,9 +64,7 @@ Number Theorem**. This theorem gives us an approximation of the number of primes
 to a given number $n$. Specifically, the Prime Number Theorem states that the number of primes less
 than or equal to $n$, denoted as $\pi(n)$, is approximately:
 
-$
-\pi(n) \approx \frac{n}{\ln(n)}
-$
+$\pi(n) \approx \frac{n}{\ln(n)}$
 
 #### Step-by-step estimation:
 
@@ -80,45 +78,33 @@ $
 2. **Approximate number of primes less than $2^{2048}$**: To estimate $\pi(2^{2048})$, we use the
    Prime Number Theorem:
 
-   $
-   \pi(2^{2048}) \approx \frac{2^{2048}}{\ln(2^{2048})}
-   $
+   $\pi(2^{2048}) \approx \frac{2^{2048}}{\ln(2^{2048})}$
 
    Since $\ln(2^{2048}) = 2048 \ln(2)$, and $\ln(2) \approx 0.693$, we have:
 
-   $
-   \ln(2^{2048}) \approx 2048 \times 0.693 \approx 1419.6
-   $
+   $\ln(2^{2048}) \approx 2048 \times 0.693 \approx 1419.6$
 
    Thus, the number of primes less than $2^{2048}$ is approximately:
 
-   $
-   \pi(2^{2048}) \approx \frac{2^{2048}}{1419.6}
-   $
+   $\pi(2^{2048}) \approx \frac{2^{2048}}{1419.6}$
 
    This is approximately:
 
-   $
-   \pi(2^{2048}) \approx \frac{2^{2048}}{1419.6} \approx 1.18 \times 10^{615}
-   $
+   $\pi(2^{2048}) \approx \frac{2^{2048}}{1419.6} \approx 1.18 \times 10^{615}$
 
 3. **Approximate number of primes less than $2^{2047}$**: Similarly, we can estimate $\pi(2^{2047})$
    as:
 
-   $
-   \pi(2^{2047}) \approx \frac{2^{2047}}{\ln(2^{2047})}
-   $
+   $\pi(2^{2047}) \approx \frac{2^{2047}}{\ln(2^{2047})}$
 
    Using $\ln(2^{2047}) \approx 2047 \times 0.693 = 1418.9$:
 
-   $
-   \pi(2^{2047}) \approx \frac{2^{2047}}{1418.9} \approx 5.9 \times 10^{614}
-   $
+   $\pi(2^{2047}) \approx \frac{2^{2047}}{1418.9} \approx 5.9 \times 10^{614}$
 
 4. **Number of primes between $2^{2047}$ and $2^{2048}$**: To estimate the number of primes in the
    range $[2^{2047}, 2^{2048}]$, we subtract $\pi(2^{2047})$ from $\pi(2^{2048})$:
 
-   $ \text{Number of primes} \approx \pi(2^{2048}) - \pi(2^{2047}) \approx (1.18 \times 10^{615}) -
+   $\text{Number of primes} \approx \pi(2^{2048}) - \pi(2^{2047}) \approx (1.18 \times 10^{615}) -
    (5.9 \times 10^{614}) $
 
    As a reminder, to subtract numbers in scientific notation, you first need to express both numbers
@@ -132,28 +118,22 @@ $
 
    Now we have:
 
-   $
-   1.18 \times 10^{615} \quad \text{and} \quad 0.59 \times 10^{615}
-   $
+   $1.18 \times 10^{615} \quad \text{and} \quad 0.59 \times 10^{615}$
 
 6. **Subtracting the coefficients**:  
    With the exponents equal, you can simply subtract the coefficients (the numbers in front of the
    powers of 10):
 
-   $
-   1.18 - 0.59 = 0.59
-   $
+   $1.18 - 0.59 = 0.59$
 
 7. **Combine with the shared exponent**:  
    After subtracting the coefficients, you reapply the shared exponent to the result:
 
-   $
-   0.59 \times 10^{615}
-   $
+   $0.59 \times 10^{615}$
 
 8. This gives approximately:
 
-   $ \text{Number of primes} \approx 5.9 \times 10^{614} $
+   $\text{Number of primes} \approx 5.9 \times 10^{614}$
 
 #### Conclusion:
 
